@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,100&display=swap");
+
+/* Fonts */
+/* encode-sans-condensed */
+.encode-sans-condensed-light {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* open-sans */
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
