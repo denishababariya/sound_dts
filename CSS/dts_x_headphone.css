@@ -7,3 +7,136 @@ body {
   background-color: #000;
 }
 
+.btn_org_focus.btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(235, 135, 104, 0.425);
+}
+
+.d_buy_try_text {
+  font-size: 20px;
+  font-weight: bold;
+}
+.d_buy_btn_content {
+  font-size: 20px;
+}
+.d_dtsx_right_side .nav-link {
+  color: #838383 !important;
+}
+.d_dtsx_right_side .nav-tabs .nav-item.show .nav-link,
+.d_dtsx_right_side .nav-tabs .nav-link.active,
+.d_dtsx_right_side .nav-tabs .nav-link.active:hover {
+  color: white !important;
+  background-color: transparent !important;
+  border-color: transparent !important ;
+  border-bottom: 1px solid white !important;
+}
+.d_dtsx_right_side .nav-link:hover {
+  border-color: transparent !important;
+  isolation: auto;
+}
+
+.d_dtsx_right_side .d_custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.d_dtsx_right_side .d_selected {
+  background-color: black; /* Background color of the d_selected item */
+  color: white; /* Text color */
+  padding: 10px;
+  border: 1px solid gray;
+  cursor: pointer;
+  padding-right: 30px; /* Add padding for the arrow */
+}
+
+.d_dtsx_right_side .arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Position the arrow */
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent; /* Adjust size */
+  border-right: 6px solid transparent; /* Adjust size */
+  border-top: 6px solid gray; /* Arrow color */
+  transform: translateY(-50%); /* Center the arrow vertically */
+}
+
+.d_dtsx_right_side .d_options {
+  display: none; /* Hide d_options by default */
+  position: absolute;
+  background-color: #202020; /* Background color of dropdown */
+  border: 1px solid gray;
+  z-index: 1;
+  width: 100%;
+}
+
+.d_dtsx_right_side .d_option {
+  padding: 10px;
+  color: white; /* Text color */
+  cursor: pointer;
+}
+
+.d_dtsx_right_side .d_option:hover {
+  background-color: #181818; /* Change to your desired hover color */
+  color: white; /* d_optional: Adjust text color for contrast */
+}
+
+.d_dtsx_right_side .d_custom-select:hover .d_options {
+  display: block; /* Show d_options on hover */
+}
+.d_good_try {
+  background-color: #e36b46;
+  height: 30px;
+  color: black;
+  width: 30px;
+  font-size: 18px;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+@media (min-width: 1200px) {
+  .d_dtsx_left_side {
+    height: 87vh;
+  }
+  .d_configure_width {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .d_buy_btn_content {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1200px) {
+  .d_dtsx_right_side .nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .d_configure_width {
+    width: 75%;
+
+    margin: auto;
+  }
+}
+@media (max-width: 576px) {
+  .d_buy_btn_content {
+    font-size: 15px;
+  }
+  .d_configure_width {
+    width: 95%;
+
+    margin: auto;
+  }
+}
+@media (max-width: 320px) {
+  .d_dtsx_right_side .nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}

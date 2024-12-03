@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.selected {
+  background-color: #202020; /* Background color of the selected item */
+  color: white; /* Text color */
+  padding: 10px;
+  border: 1px solid gray;
+  cursor: pointer;
+  padding-right: 30px; /* Add padding for the arrow */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Position the arrow */
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent; /* Adjust size */
+  border-right: 6px solid transparent; /* Adjust size */
+  border-top: 6px solid gray; /* Arrow color */
+  transform: translateY(-50%); /* Center the arrow vertically */
+}
+
+.options {
+  display: none; /* Hide options by default */
+  position: absolute;
+  background-color: #202020; /* Background color of dropdown */
+  border: 1px solid gray;
+  z-index: 1;
+  width: 100%;
+}
+
+.option {
+  padding: 10px;
+  color: white; /* Text color */
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #E36B46; /* Change to your desired hover color */
+  color: white; /* Optional: Adjust text color for contrast */
+}
+
+.custom-select:hover .options {
+  display: block; /* Show options on hover */
+}
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

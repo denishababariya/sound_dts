@@ -52,6 +52,42 @@
 .d_privacy_policy_modal .modal-body p{
     font-size: 12px;
 }
+.d_modal_checkbox .form-check-input:checked {
+    background-color: #E36B46;
+    border-color: #E36B46;
+}
+.d_modal_checkbox .form-check-input:focus {
+    border-color: rgb(235, 134, 104);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(235, 135, 104, 0.425);
+}
+.btn_org_focus.btn:focus {
+    box-shadow: 0 0 0 .25rem rgba(235, 135, 104, 0.425);
+}
+.d_policy_modal_body p{
+    font-size: 14px;
+}
+.k_modal_marg {
+    margin-top: 15rem;
+  }
+  
+  .k_model_footer {
+    border-top: none;
+    justify-content: flex-start;
+    margin-top: 12rem;
+  }
+  
+  .k_model_footer button {
+    padding: 6px 70px;
+  }
+  
+  .k_model_header {
+    border-bottom: none;
+  }
+  
+  .k_pay_img img {
+    height: 25px;
+  }
 @media (min-width: 576px) {
     .d_modal_main .modal-dialog {
         max-width: 470px;

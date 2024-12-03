@@ -14,26 +14,105 @@
 <body>
     <div id="includedContent"></div>
     <!-- Navs and tabs first section -->
-    <section>
-        <div>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                        type="button" role="tab" aria-controls="home" aria-selected="true">Video</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                        type="button" role="tab" aria-controls="profile" aria-selected="false">Configure</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                        type="button" role="tab" aria-controls="contact" aria-selected="false">Explore</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+    <section style="color: white;">
+        <div class="row">
+            <div class="col-xl-3 col-12 d-flex d_dtsx_left_side align-items-center justify-content-center mt-xl-0 mt-4">
+                <div class="w-100">
+                    <h1>DTS Headphone:X</h1>
+                    <div class="row mb-3 gap-sm-0 gap-2">
+                        <div class="col-sm-6 col-12 ps-0 pe-sm-1 pe-0">
+                            <button class="btn btn_org_focus w-100 p-1 "
+                                style="background-color: #E36B46; color: white; border-radius: 0px;">
+                                <p class="mb-0 p-0 d_buy_try_text">Buy</p>
+                                <p class="mb-0 p-0"><strike>₹ 1,099.00 &nbsp;</strike> <span class="text-nowrap">₹
+                                        549.50</span></p>
+                            </button>
+                        </div>
+                        <div class="col-sm-6 col-12 pe-0 ps-sm-1 ps-0">
+                            <button class="btn btn-secondary w-100 p-1" style="border-radius: 0;">
+                                <p class="mb-0 p-0 d_buy_try_text">Try</p>
+                                <p class="mb-0 p-0">Try 14 days for free</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <hr style="background-color: white; opacity: 1;">
+                    <p class="mb-1 d_buy_btn_content">DTS Headphone:X unlocks the power of immersive audio through any
+                        headphones.</p>
+                    <p class="mb-1 d_buy_btn_content">Chosen by top gaming headphone manufacturers to deliver believable
+                        audio that immerses you in the game.</p>
+                    <p class="mb-1 d_buy_btn_content">The DTS:X decoder is included in your DTS Headphone:X purchase.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-9 col-12 ">
+                <div class="text-xl-start d_dtsx_right_side text-center">
+                    <div>
+                        <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                    aria-d_selected="true">Video</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                    type="button" role="tab" aria-controls="profile"
+                                    aria-d_selected="false">Configure</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                    type="button" role="tab" aria-controls="contact"
+                                    aria-d_selected="false">Explore</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-xl-2 pt-3" id="myTabContent">
+                            <div class="tab-pane fade show active text-center" id="home" role="tabpanel"
+                                aria-labelledby="home-tab">
+                                <p class="pb-1 mb-0" style="color: #E36B46;font-size: 24px;">Sample Video</p>
+                                <p class="pb-1 mb-1 " style="font-weight: 600;">DTS Headphone:X disabled</p>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="text-center">
+                                    <p class="pb-1 mb-0" style="color: #E36B46;font-size: 24px;">Configure Headphones
+                                    </p>
+                                </div>
+                                <div class="d_configure_width">
+                                    <p class="text-secondary">DTS Headphone:X has been tuned to over 500
+                                        headphones. Select your exact model. Or, if you’re not
+                                        sure, select the headphone type you’re using. </p>
+                                    <img src="/Assets/configure_image.png" alt="">
+                                    <p class="text-secondary">Currently d_selected: Generic Over- Ear Headphones</p>
+                                    <p style="font-weight: 600;">Special Mode</p>
+                                    <div class="d_custom-select w-auto">
+                                        <div class="d_selected">Balanced</div>
+                                        <div class="arrow"></div> <!-- Arrow indicator -->
+                                        <div class="d_options">
+                                            <div class="d_option" data-value="balanced">Balanced</div>
+                                            <div class="d_option" data-value="spacious">Spacious</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="row text-center">
+                                    <div class="col-xl-auto col-12">
+                                        <p class="pb-1 mb-0" style="color: #E36B46;font-size: 24px;">Explore Spatial
+                                            Sound</p>
+                                        <p class="pb-1 mb-1 " style="font-weight: 600;">Please ensure that DTS
+                                            Headphone:X is d_selected in your Spatial sound menu.</p>
+                                    </div>
+                                    <div class="col-xl-5 col-12 d-xl-block d-none"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-xl-0 mt-3">
+            <div class="col-12 text-end ">
+                <p>Not licensed</p>
             </div>
         </div>
     </section>
@@ -44,6 +123,25 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script>
+        $(document).ready(function () {
+            $('.d_selected').click(function () {
+                $(this).siblings('.d_options').toggle();
+            });
+
+            $('.d_option').click(function () {
+                var value = $(this).data('value');
+                $('.d_selected').text($(this).text());
+                $('.d_options').hide();
+                // You can also handle the d_selected value here if needed
+            });
+
+            // Close the dropdown if clicked outside
+            $(document).click(function (e) {
+                if (!$(e.target).closest('.d_custom-select').length) {
+                    $('.d_options').hide();
+                }
+            });
+        });
         $(function () {
             // Load the initial content
             $("#includedContent").load("navbar.html", function (response, status, xhr) {
@@ -61,7 +159,7 @@
                 $(this).addClass('active');
             });
 
-            // Optional: Set the active class based on the current URL
+            // d_optional: Set the active class based on the current URL
             var currentUrl = window.location.href;
             $('.nav-link').each(function () {
                 if (this.href === currentUrl) {
