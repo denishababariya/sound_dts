@@ -160,15 +160,13 @@
                     // Remove the Try button section
                     $('.d_buy_modal').remove();
 
+                    // Store the state in localStorage
+                    localStorage.setItem('tryButtonClicked', 'true');
+
                     // Remove "not" from "not licensed"
                     $('p.mb-0:contains("not licensed")').text('licensed');
 
                     // Add two new lines below Buy and Try buttons
-                    //             const newLinesHtml = `
-                    //     <p class="text-success mt-3">Your DTS:X license is now active.</p>
-                    //     <p class="text-muted">Enjoy immersive audio with DTS:X!</p>
-                    // `;
-                    //             $('.row.mb-3.gap-sm-0.gap-2').after(newLinesHtml);
                     const currentDate = new Date();
                     const expirationDate = new Date();
                     expirationDate.setDate(currentDate.getDate() + 15);
@@ -176,20 +174,49 @@
                     const formattedExpirationDate = expirationDate.toLocaleDateString('en-GB'); // Format: DD-MM-YYYY
                     const newLinesHtml = `
                         <p class="text-white mt-3 ">Your DTS:X license is now active.</p>
-                             <div class="text-white d-flex gap-2">
-                <div class="d_good_try"><i class="fa fa-check"
-                        aria-hidden="true"></i></div><span class="fs-5"> Good to go!</span>
-            </div>
+                        <div class="text-white d-flex gap-2">
+                            <div class="d_good_try"><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <span class="fs-5"> Good to go!</span>
+                        </div>
                     `;
                     $('.row.mb-3.gap-sm-0.gap-2').after(newLinesHtml);
+                    
                     // Replace the existing line and add the expiration date
                     const updatedLineHtml = `
-            <p class="text-white mt-3 ">
-                Current activation expires: ${formattedExpirationDate}
-            </p>
-        `;
+                        <p class="text-white mt-3 ">
+                            Current activation expires: ${formattedExpirationDate}
+                        </p>
+                    `;
                     $('p.text-white.mt-3 ').replaceWith(updatedLineHtml);
                 });
+            });
+
+            // Check localStorage on page load
+            $(document).ready(function () {
+                if (localStorage.getItem('tryButtonClicked') === 'true') {
+                    $('.d_buy_modal').remove(); // Remove the Try button if it was clicked before
+                }
+                const currentDate = new Date();
+                    const expirationDate = new Date();
+                    expirationDate.setDate(currentDate.getDate() + 15);
+
+                    const formattedExpirationDate = expirationDate.toLocaleDateString('en-GB'); // Format: DD-MM-YYYY
+                    const newLinesHtml = `
+                        <p class="text-white mt-3 ">Your DTS:X license is now active.</p>
+                        <div class="text-white d-flex gap-2">
+                            <div class="d_good_try"><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <span class="fs-5"> Good to go!</span>
+                        </div>
+                    `;
+                    $('.row.mb-3.gap-sm-0.gap-2').after(newLinesHtml);
+                    
+                    // Replace the existing line and add the expiration date
+                    const updatedLineHtml = `
+                        <p class="text-white mt-3 ">
+                            Current activation expires: ${formattedExpirationDate}
+                        </p>
+                    `;
+                    $('p.text-white.mt-3 ').replaceWith(updatedLineHtml);
             });
         });
     </script>
