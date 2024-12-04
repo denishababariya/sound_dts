@@ -25,7 +25,7 @@
                         <p class="d_modal_main_header mb-1">Your trial expires soon.</p>
                         <p class="d_modal_sec_header mb-5 mb-3">Your trial of DTS:X Decoder expires in 13 days.</p>
                         <div class="d-flex justify-content-center ">
-                            <button type="button" class="btn d_org_modal_btn fs-5"
+                            <button type="button" class="btn btn_org_focus d_org_modal_btn fs-5"
                                 style="background-color: #E36B46; color: white; border-radius: 0px; flex: 0 0 auto;">Buy</button>
                             <button type="button" class="btn btn-secondary d_gray_modal_btn fs-5"
                                 data-bs-dismiss="modal" style="flex: 0 0 auto;">Don't remind me again</button>
@@ -54,7 +54,7 @@
                         <p class="d_modal_sec_header mb-5 mb-3">Are you enjoying the application? We value your
                             feedback.</p>
                         <div class="d-flex justify-content-between">
-                            <button type="button" class="btn d_org_modal_btn fs-5 w-100 me-1"
+                            <button type="button" class="btn btn_org_focus d_org_modal_btn fs-5 w-100 me-1"
                                 style="background-color: #E36B46; color: white; border-radius: 0px;">Yes</button>
                             <button type="button" class="btn btn-secondary d_gray_modal_btn fs-5 w-100 me-1"
                                 data-bs-dismiss="modal">No</button>
@@ -81,7 +81,7 @@
                             know how we can
                             improve the experience?</p>
                         <div class="d-flex justify-content-between">
-                            <button type="button" class="btn d_org_modal_btn fs-5 w-100 me-1"
+                            <button type="button" class="btn btn_org_focus d_org_modal_btn fs-5 w-100 me-1"
                                 style="background-color: #E36B46; color: white; border-radius: 0px;">FAQ</button>
                             <button type="button" class="btn btn-secondary d_gray_modal_btn fs-5 w-100 me-1"
                                 data-bs-dismiss="modal">Contact us</button>
@@ -107,8 +107,9 @@
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
-                        <h6 class="mb-3">End User License Agreement</h6>
+                    <div class="modal-body p-1 m-3 border d_policy_modal_body"
+                        style="max-height: 45vh; overflow-y: auto;">
+                        <h6 class="mb-2">End User License Agreement</h6>
                         <p>DTS End-User License Agreement</p>
                         <p>This document (“EULA”) is a legal agreement between you, the person or entity who accepts the
                             terms of this EULA as described below, and DTS, Inc. (“DTS”) regarding the DTS Sound Unbound
@@ -130,13 +131,15 @@
                         <!-- Checkbox for acceptance -->
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="acceptCheckbox">
-                            <label class="form-check-label" for="acceptCheckbox">
+                            <label class="form-check-label" for="acceptCheckbox" style="font-size: 14px;">
                                 I accept the End User License Agreement
                             </label>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="acceptEULA" disabled>Accept EULA</button>
+                    <div class="modal-footer border-0 ">
+                        <button type="button" class="btn btn_org_focus"
+                            style="background-color: #E36B46; color: white; border-radius: 0px;" id="acceptEULA"
+                            disabled>Accept EULA</button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                     </div>
                 </div>
