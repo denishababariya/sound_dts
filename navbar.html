@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="./fontawesome-free-6.7.1-web/fontawesome-free-6.7.1-web/css/all.min.css">
     <link rel="stylesheet" href="./CSS/Fonts.css">
     <link rel="stylesheet" href="./CSS/Index.css">
+    <link rel="stylesheet" href="CSS/modal.css">
 </head>
 
 <body>
-     <!-- Header -->
-     <section class="header">
+    <!-- Header -->
+    <section class="header">
         <div class="row k_head_row">
             <div class="col-1 pt-2">
                 <div class="k_home_logo">
@@ -33,8 +34,7 @@
             <div class="col-xl-5 col-lg-6 col-md-8 col-sm-auto col-auto p-0">
                 <ul class="k_navs_head nav nav-tabs" role="tablist">
                     <li class="nav-item ">
-                        <a class="nav-link  text-white" href="./Index.html"><i
-                                class="fas fa-home fs-4 "></i></a>
+                        <a class="nav-link  text-white" href="./Index.html"><i class="fas fa-home fs-4 "></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white k_nav_link" href="./dts_x_headphone.html">
@@ -47,27 +47,46 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link text-white k_nav_link " href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link text-white k_nav_link" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="fa-solid fa-bars"></i>
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <ul class="dropdown-menu k_nav_dropdown bg-dark">
+                            <li><a class="dropdown-item" href="./App_Information.html">App information</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#Need_Help" href="#">Redeem code</a></li>
+                            <li><a class="dropdown-item" href="#">Refresh license</a></li>
+                            <li><a class="dropdown-item" href="#">Keep me informed</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy policy - Xperi</a></li>
+                            <li><a class="dropdown-item" href="#">License agreement</a></li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
+            <div class="modal fade d_modal_main " id="Need_Help" tabindex="-1" aria-labelledby="Need_HelpLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content ">
+            
+                        <div class="modal-body ">
+                            <!-- <p class="d_modal_main_header mb-1">Need Help?</p> -->
+                            <p class="d_modal_sec_header mb-5 mb-3">Was your code successfully redeemed in the Microsoft Store?</p>
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="btn d_org_modal_btn fs-5 w-100 me-1"
+                                    style="background-color: #E36B46; color: white; border-radius: 0px;">Yes</button>
+                                <!-- <button type="button" class="btn btn-secondary d_gray_modal_btn fs-5 w-100 me-1"
+                                    data-bs-dismiss="modal">Contact us</button> -->
+                                <button type="button" class="btn btn-secondary d_gray_modal_btn fs-5 w-100"
+                                    data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/5hb7g5/5hb7g5/5hb7g5/5hb7g5/5hb7g5"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

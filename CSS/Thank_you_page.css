@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.k_lets_go_btn {
+  background: linear-gradient(90deg, #e46f46 0%, #f2b444 100%);
+  border: none;
+  color: white;
+  font-size: 17px;
+}

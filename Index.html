@@ -141,7 +141,9 @@
                             <div class="k_box_img">
                                 <a href="https://xperi.com/wp-content/uploads/2019/10/Immersive_Over_Headphones.mp4"
                                     class="d-block text-white text-center text-decoration-none">
-                                    <img src="./Assets/Second_box.png" alt="">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="./Assets/Second_box.png" alt="">
+                                    </div>
                                     <span class="d-block text-center">Immersive Over <br>
                                         Headphones </span>
                                 </a>
@@ -170,12 +172,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- NAvbar  -->
     <script>
         $(function () {
             $("#includedContent").load("navbar.html", function (response, status, xhr) {
                 if (status == "error") {
                     var msg = "Error: ";
                     $("#includedContent").html(msg + xhr.status + " " + xhr.statusText);
+                } else {
+                    // Add click event listener to the dropdown toggle
+                    $('.nav-item.dropdown .nav-link').on('click', function (event) {
+                        event.preventDefault(); // Prevent default anchor behavior
+                        var dropdownMenu = $(this).next('.dropdown-menu'); // Get the dropdown menu
+                        $(this).toggleClass('show'); // Toggle show class on the nav link
+                        dropdownMenu.toggleClass('show'); // Toggle show class on the dropdown menu
+                        $(this).attr('aria-expanded', dropdownMenu.hasClass('show')); // Update aria attribute
+                    });
                 }
             });
         });

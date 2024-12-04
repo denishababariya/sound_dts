@@ -229,6 +229,16 @@ a {
   height: 70px;
 }
 
+
+/* Navbar css */
+.k_nav_dropdown{
+  background: rgba(30, 30, 30, 1);
+}
+
+.k_nav_dropdown li a {
+  color: white;
+}
+
 @media only screen and (max-width: 1440px) {
   .k_home_logo img {
     padding: 10px 0px 0px 0px;
